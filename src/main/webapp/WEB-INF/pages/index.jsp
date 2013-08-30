@@ -1,0 +1,9 @@
+<html>
+<head>
+    <title>Spring</title>
+</head>
+<body>
+	<h1>${message}</h1>
+	<h1>${message2}</h1>
+</body>
+</html>
