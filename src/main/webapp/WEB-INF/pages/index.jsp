@@ -1,9 +1,11 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+
 <html>
-<head>
-    <title>Spring</title>
-</head>
+
+<jsp:include page="fragments/headTag.jsp"/>
+
 <body>
 	<h1>${message}</h1>
-	<h1>${message2}</h1>
+	<p>${message2}</p>
 </body>
 </html>
