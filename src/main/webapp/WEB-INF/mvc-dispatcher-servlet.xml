@@ -5,7 +5,8 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.springapp.mvc"/>
+    <!-- TODO add other components here as comma separated list-->
+    <context:component-scan base-package="com.springapp.mvc.controller"/>
 
     <bean id="templateResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/pages/"/>
