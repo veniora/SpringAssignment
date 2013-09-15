@@ -6,3 +6,23 @@ Run:                mvn jetty:run
 Go to:              http://localhost:8080/
 
 Magic.
+
+==========================================
+
+MySQL tips:
+
+1. When creating a new table, the column flags mean:
+
+PK - Primary Key
+
+NN - Not Null 
+
+BIN - Binary
+
+UN - Unsigned
+
+UQ - Create/remove Unique Key
+
+ZF - Zero-Filled
+
+AI - Auto Incremenent
