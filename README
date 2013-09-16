@@ -1,11 +1,16 @@
-To Run
+#Database Setup
+
+Install MySQL:      http://dev.mysql.com/downloads/windows/installer/
+Configure it while keeping the default port of 3306
+Create a new schema called "spring_database"
+TODO: have a set of database creation SQL files
+
+#Code Setup
 
 First time:         mvn install
 Run:                mvn jetty:run
 
-Go to:              http://localhost:8080/
-
-Magic.
+Go to:              *http://localhost:8080/*
 
 ==========================================
 
