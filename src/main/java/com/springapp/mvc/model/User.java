@@ -1,67 +1,48 @@
 package com.springapp.mvc.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "USERS")
 public class User {
 
-    @Id
-    @Column(name = "id")
-    private int id;
+    private String name = null;
+    private  String standard = null;
+    private int age;
+    private String sex = null;
+    // Setters and getters are omitted for making the code short.
 
-    @Column(name = "email")
-    private String email;
-
-    @Column(name = "firstname")
-    private String firstname;
-
-    @Column(name = "lastname")
-    private String lastname;
-
-    @Column(name = "password_hash")
-    private String password_hash;
-
-    public int getId() {
-        return id;
+    public String getName() {
+        return name;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getEmail() {
-        return email;
+    public String getStandard() {
+        return standard;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setStandard(String standard) {
+        this.standard = standard;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public int getAge() {
+        return age;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getSex() {
+        return sex;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 
-    public String getPassword_hash() {
-        return password_hash;
-    }
-
-    public void setPassword_hash(String password_hash) {
-        this.password_hash = password_hash;
+    @Override
+    public String toString() {
+        return "User [name=" + name + ", standard=" + standard + ", age=" + age
+                + ", sex=" + sex + "]";
     }
 }
