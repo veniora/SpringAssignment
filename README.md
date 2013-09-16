@@ -1,16 +1,23 @@
-#Database Setup
+# 325 Spring Assignment
 
-Install MySQL:      http://dev.mysql.com/downloads/windows/installer/
-Configure it while keeping the default port of 3306
-Create a new schema called "spring_database"
-TODO: have a set of database creation SQL files
+This is a simple application designed to let a user manage their personal collection or library of physical books. Users will have one or more library which will each contain zero or more books.
 
-#Code Setup
+Users can add books to a library and associate certain data about each book. Eventually it will support moving between libraries (eg a flatting student with some books still at the family home) and lending books out to people and keeping track of who has what.
 
-First time:         mvn install
-Run:                mvn jetty:run
+## Setup
 
-Go to:              *http://localhost:8080/*
+### Database Setup
+
+* Install MySQL:      http://dev.mysql.com/downloads/windows/installer/
+* Configure it while keeping the default port of 3306
+* Create a new schema called "spring_database"
+* TODO: have a set of database creation SQL files
+
+### Code Setup
+
+* First time:         mvn install
+* Run:                mvn jetty:run
+* Go to:              _http://localhost:8080/_
 
 ==========================================
 
