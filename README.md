@@ -11,7 +11,7 @@ Users can add books to a library and associate certain data about each book. Eve
 * Install MySQL:      http://dev.mysql.com/downloads/windows/installer/
 * Configure it while keeping the default port of 3306
 * Create a new schema called "spring_database"
-* TODO: have a set of database creation SQL files
+* Import db/database_schema.sql and run it to create the tables
 
 ### Code Setup
 
