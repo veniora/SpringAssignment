@@ -1,8 +1,0 @@
-To Run
-
-First time:         mvn install
-Run:                mvn jetty:run
-
-Go to:              http://localhost:8080/
-
-Magic.
