@@ -32,6 +32,7 @@ public class RegistrationController {
             return "register";
         } else {
             System.out.println("User created");
+
             return "success";
         }
     }
