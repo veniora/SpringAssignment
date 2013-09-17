@@ -38,3 +38,7 @@ UQ - Create/remove Unique Key
 ZF - Zero-Filled
 
 AI - Auto Incremenent
+
+### References
+
+http://viralpatel.net/blogs/spring3-mvc-hibernate-maven-tutorial-eclipse-example/
