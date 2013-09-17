@@ -1,7 +1,7 @@
 package com.springapp.dao;
 
 
-import com.springapp.domain.User;
+import com.springapp.mvc.model.User;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

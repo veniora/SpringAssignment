@@ -1,7 +1,7 @@
 package com.springapp.service;
 
 import com.springapp.dao.Userdao;
-import com.springapp.domain.User;
+import com.springapp.mvc.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;

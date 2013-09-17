@@ -1,7 +1,7 @@
 package com.springapp.dao;
 
 
-import com.springapp.domain.User;
+import com.springapp.mvc.model.User;
 
 import java.util.List;
 

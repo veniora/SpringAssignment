@@ -1,6 +1,6 @@
 package com.springapp.service;
 
-import com.springapp.domain.User;
+import com.springapp.mvc.model.User;
 
 import java.util.List;
 
