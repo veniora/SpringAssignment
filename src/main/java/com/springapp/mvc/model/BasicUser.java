@@ -1,11 +1,20 @@
 package com.springapp.mvc.model;
 
+import javax.persistence.*;
+
 /**
  * A very basic user which will be used to store libraries and books against
  */
+@Entity
+@Table(name = "USERS")
 public class BasicUser {
 
-    int userId;
+    @Id
+    @Column(name = "ID")
+    @GeneratedValue
+    private int userId;
+
+    @Column(name = "NAME")
     String name;
 
     public BasicUser() {

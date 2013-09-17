@@ -7,5 +7,5 @@ import java.util.List;
 public interface BasicUserService {
 
     public void addUser(BasicUser user);
-    public List listUsers();
+    public List<BasicUser> listUsers();
 }

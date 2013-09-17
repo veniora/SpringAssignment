@@ -5,7 +5,7 @@ import com.springapp.mvc.model.BasicUser;
 import java.util.List;
 
 /**
- *
+ *  These are the supported operations for users
  */
 public interface BasicUserDao {
 

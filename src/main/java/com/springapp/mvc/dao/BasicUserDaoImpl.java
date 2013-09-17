@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Logic to display and add users
  */
-@Repository("userDao")
+@Repository
 public class BasicUserDaoImpl implements BasicUserDao {
 
     @Autowired
@@ -18,12 +18,11 @@ public class BasicUserDaoImpl implements BasicUserDao {
 
     @Override
     public void addUser(BasicUser user) {
-        sessionFactory.getCurrentSession().saveOrUpdate(user);
+        this.sessionFactory.getCurrentSession().save(user);
     }
 
     @Override
-    public List listUsers() {
-        return sessionFactory.getCurrentSession().
-                createCriteria(BasicUser.class).list();
+    public List<BasicUser> listUsers() {
+        return this.sessionFactory.getCurrentSession().createQuery("from BasicUser").list();
     }
 }
