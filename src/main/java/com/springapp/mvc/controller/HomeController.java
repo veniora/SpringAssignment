@@ -42,7 +42,7 @@ public class HomeController {
         }
     }
 
-    @RequestMapping("/delete/user/{userId}")
+    @RequestMapping(value = "/delete/user/{userId}", method = RequestMethod.POST)
     public String deleteUser(@PathVariable("userId") Integer userId) {
         userService.removeUser(userId);
 
