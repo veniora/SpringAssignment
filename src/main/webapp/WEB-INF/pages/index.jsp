@@ -7,6 +7,8 @@
 <jsp:include page="fragments/headTag.jsp"/>
 
 <body>
+<script src="<c:url value="/resources/scripts/general.js"/>" ></script>
+
 <h1><spring:message code="label.title"/> </h1>
 
 <h2><spring:message code="label.users_title"/></h2>
@@ -14,7 +16,7 @@
     <ul>
         <c:forEach items="${userList}" var="user">
             <%--TODO set as links to /user/<id>--%>
-            <li>${user.name}</li>
+            <li>${user.name} <a href="delete/user/${user.id}" onclick="return confirmRemoveUser()"> (remove)</a></li>
         </c:forEach>
     </ul>
 </c:if>

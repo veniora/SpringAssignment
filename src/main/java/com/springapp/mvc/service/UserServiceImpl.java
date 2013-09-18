@@ -25,4 +25,10 @@ public class UserServiceImpl implements UserService {
     public List listUsers() {
         return userDao.listUsers();
     }
+
+    @Override
+    @Transactional
+    public void removeUser(long id) {
+        userDao.removeUser(id);
+    }
 }

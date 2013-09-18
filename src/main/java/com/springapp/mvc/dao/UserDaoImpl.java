@@ -23,6 +23,15 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public List<User> listUsers() {
+        //noinspection JpaQlInspection
         return this.sessionFactory.getCurrentSession().createQuery("from User").list();
+    }
+
+    @Override
+    public void removeUser(long id) {
+        User user = (User) sessionFactory.getCurrentSession().load(User.class, id);
+        if (null != user) {
+            sessionFactory.getCurrentSession().delete(user);
+        }
     }
 }
