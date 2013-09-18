@@ -1,7 +1,7 @@
 package com.springapp.mvc.controller;
 
-import com.springapp.mvc.model.BasicUser;
-import com.springapp.mvc.service.BasicUserService;
+import com.springapp.mvc.model.User;
+import com.springapp.mvc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -20,22 +20,22 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 
     @Autowired
-    private BasicUserService basicUserService;
+    private UserService userService;
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String displayUsers(ModelMap model) {
-        model.addAttribute("user", new BasicUser());
-        model.addAttribute("userList", basicUserService.listUsers());
+        model.addAttribute("user", new User());
+        model.addAttribute("userList", userService.listUsers());
 
 		return "index";
 	}
 
     @RequestMapping(method = RequestMethod.POST)
-    public String addNewUser(@ModelAttribute(value = "basicUser")BasicUser user, BindingResult result){
+    public String addNewUser(@ModelAttribute(value = "user")User user, BindingResult result){
         if (result.hasErrors()){
             return "index";
         } else {
-            basicUserService.addUser(user);
+            userService.addUser(user);
 
             return "redirect:/";
         }

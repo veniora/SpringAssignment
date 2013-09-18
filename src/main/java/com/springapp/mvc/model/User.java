@@ -1,12 +1,38 @@
 package com.springapp.mvc.model;
 
+import javax.persistence.*;
+
+/**
+ * A very basic user which will be used to store libraries and books against
+ * TODO refactor out unnecessary files and user types
+ */
+@Entity
+@Table(name = "USERS")
 public class User {
 
-    private String name = null;
-    private  String standard = null;
-    private int age;
-    private String sex = null;
-    // Setters and getters are omitted for making the code short.
+    @Id
+    @Column(name = "ID")
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
+
+    @Column(name = "NAME")
+    String name;
+
+    public User() {
+    }
+
+    public User(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -14,35 +40,5 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getStandard() {
-        return standard;
-    }
-
-    public void setStandard(String standard) {
-        this.standard = standard;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    @Override
-    public String toString() {
-        return "User [name=" + name + ", standard=" + standard + ", age=" + age
-                + ", sex=" + sex + "]";
     }
 }
