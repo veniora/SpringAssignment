@@ -1,3 +1,19 @@
 p{
     color: tomato;
 }
+
+/* HOME PAGE */
+.addUserButton {
+    background: url("/resources/images/PlusSign.png") no-repeat;
+    width: 30px;
+    height: 30px;
+    border: 0;
+}
+
+.addUserButton:hover{
+
+}
+
+.addUserButton:active{
+
+}

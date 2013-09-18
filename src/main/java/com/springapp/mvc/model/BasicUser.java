@@ -12,8 +12,8 @@ public class BasicUser {
 
     @Id
     @Column(name = "ID")
-    @GeneratedValue
-    private int userId;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
 
     @Column(name = "NAME")
     String name;
@@ -21,17 +21,17 @@ public class BasicUser {
     public BasicUser() {
     }
 
-    public BasicUser(int userId, String name) {
-        this.userId = userId;
+    public BasicUser(int id, String name) {
+        this.id = id;
         this.name = name;
     }
 
-    public int getUserId() {
-        return userId;
+    public long getId() {
+        return id;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

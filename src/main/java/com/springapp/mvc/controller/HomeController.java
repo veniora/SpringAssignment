@@ -24,6 +24,7 @@ public class HomeController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String displayUsers(ModelMap model) {
+        model.addAttribute("user", new BasicUser());
         model.addAttribute("userList", basicUserService.listUsers());
 
 		return "index";
@@ -34,10 +35,9 @@ public class HomeController {
         if (result.hasErrors()){
             return "index";
         } else {
-            System.out.println("New User Added");
             basicUserService.addUser(user);
 
-            return "index";
+            return "redirect:/";
         }
     }
 }
