@@ -13,11 +13,11 @@
 <c:if test="${!empty userList}">
     <ul>
         <c:forEach items="${userList}" var="user">
+            <%--TODO set as links to /user/<id>--%>
             <li>${user.name}</li>
         </c:forEach>
     </ul>
 </c:if>
-	<%--<h1>${message}</h1>--%>
-	<%--<p>${message2}</p>--%>
+<%--TODO create form for adding new users--%>
 </body>
 </html>

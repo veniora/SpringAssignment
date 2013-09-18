@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 /**
  * A very basic user which will be used to store libraries and books against
+ * TODO refactor out unnecessary files and user types
  */
 @Entity
 @Table(name = "USERS")
