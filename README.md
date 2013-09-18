@@ -8,10 +8,13 @@ Users can add books to a library and associate certain data about each book. Eve
 
 ### Database Setup
 
+Note: Hibernate will actually auto generate all required tables. We just need to ensure that the schema exists before we run it.
+
 * Install MySQL:      http://dev.mysql.com/downloads/windows/installer/
 * Ensure db is running and on port 3306
 * Set user=admin and password=password
-* Import db/database_schema.sql and run it to create the tables
+* Create a schema called "spring-library-service" and leave it blank
+* ~~Import db/database_schema.sql and run it to create the tables~~
 
 ### Code Setup
 
