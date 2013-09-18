@@ -13,12 +13,14 @@
 
 <h2><spring:message code="label.users_title"/></h2>
 <c:if test="${!empty userList}">
-    <ul>
+    <table>
         <c:forEach items="${userList}" var="user">
-            <%--TODO set as links to /user/<id>--%>
-            <li>${user.name} <a href="delete/user/${user.id}" onclick="return confirmRemoveUser()"> (remove)</a></li>
+            <tr>
+                <td><a href="/user/${user.id}">${user.name}</a> </td>
+                <td><a href="delete/user/${user.id}" onclick="return confirmRemoveUser()"> (remove)</a></td>
+            </tr>
         </c:forEach>
-    </ul>
+    </table>
 </c:if>
 <%--TODO create form for adding new users--%>
 
