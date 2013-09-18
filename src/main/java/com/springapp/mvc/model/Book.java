@@ -1,9 +1,6 @@
 package com.springapp.mvc.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "BOOKS")
@@ -11,7 +8,8 @@ public class Book {
 
     @Id
     @Column(name = "id")
-    private int id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
 
     @Column(name = "title")
     private String title;
@@ -22,7 +20,11 @@ public class Book {
     @Column(name = "isbn")
     private String isbn;
 
-    public int getId() {
+    @ManyToOne
+    @JoinColumn(name="ID")
+    private User user;
+
+    public long getId() {
         return id;
     }
 

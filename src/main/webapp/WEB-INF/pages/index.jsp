@@ -22,7 +22,6 @@
         </c:forEach>
     </table>
 </c:if>
-<%--TODO create form for adding new users--%>
 
 <form:form method="POST" action="/" modelAttribute="user">
    <table>

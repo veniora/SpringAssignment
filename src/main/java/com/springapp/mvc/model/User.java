@@ -1,6 +1,7 @@
 package com.springapp.mvc.model;
 
 import javax.persistence.*;
+import java.util.Set;
 
 /**
  * A very basic user which will be used to store libraries and books against
@@ -18,7 +19,14 @@ public class User {
     @Column(name = "NAME")
     String name;
 
+    @OneToMany(mappedBy="user")
+    private Set<Book> books;
+
     public User() {
+    }
+
+    public Set<Book> getBooks() {
+        return books;
     }
 
     public User(int id, String name) {
