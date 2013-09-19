@@ -20,12 +20,12 @@ public class Book {
     @Column(name = "isbn")
     private String isbn;
 
-//    @Column(name = "user_id")
-//    private long user_id;
+    @Column(name = "user_id")
+    private long user_id;
 
-    @ManyToOne
-    @JoinColumn(name="user_id", insertable = false, updatable = false)
-    private User user;
+//    @ManyToOne
+//    @JoinColumn(name="user_id", insertable = false, updatable = false)
+//    private User user;
 
     public long getId() {
         return id;
@@ -59,11 +59,19 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public User getUser() {
-        return user;
+    public long getUser_id() {
+        return user_id;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setUser_id(long user_id) {
+        this.user_id = user_id;
     }
+
+    //    public User getUser() {
+//        return user;
+//    }
+//
+//    public void setUser(User user) {
+//        this.user = user;
+//    }
 }
