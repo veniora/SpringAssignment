@@ -5,6 +5,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * Not currently used - original spec was for users to assign books to libraries
+ */
+
 @Entity
 @Table(name = "LIBRARIES")
 public class Library {
