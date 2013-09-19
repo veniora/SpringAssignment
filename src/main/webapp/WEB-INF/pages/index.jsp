@@ -12,7 +12,7 @@
     <h1><spring:message code="label.title"/> </h1>
 
     <div class="mainBody">
-
+        <p>Click on a user to view the books they have in their collection.</p>
         <h2><spring:message code="label.users_title"/></h2>
         <c:if test="${!empty userList}">
             <table>
