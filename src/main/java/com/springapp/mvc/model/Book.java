@@ -24,7 +24,7 @@ public class Book {
     private long user_id;
 
     @ManyToOne
-    @JoinColumn(name="user_id", insertable = false, updatable = false)
+    @JoinColumn(name="user_ID", insertable = false, updatable = false)
     private User user;
 
     public long getId() {
@@ -65,5 +65,13 @@ public class Book {
 
     public void setUser_id(long userID) {
         this.user_id = userID;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }

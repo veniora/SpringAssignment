@@ -11,7 +11,7 @@ import java.util.Set;
 public class User {
 
     @Id
-    @Column(name = "ID")
+    @Column(name = "user_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
@@ -19,7 +19,7 @@ public class User {
     String name;
 
     @OneToMany
-    @JoinColumn
+    @JoinColumn(name="user_ID")
     private Set<Book> books;
 
     public User() {
