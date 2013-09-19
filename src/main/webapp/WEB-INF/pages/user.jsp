@@ -62,7 +62,7 @@
                     <td style="visibility: hidden"><form:input path="user_id"/></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" value="" class="addUserButton" src="http://www.clker.com/cliparts/Z/J/2/Y/v/d/black-button-hi.png" alt="Add new book"></td>
+                    <td><input type="image" value="" class="addUserButton" src="http://www.clker.com/cliparts/Z/J/2/Y/v/d/black-button-hi.png" alt="Add new book"></td>
                 </tr>
             </table>
         </form:form>

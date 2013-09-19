@@ -3,6 +3,7 @@ body{
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-position:center;
+    font: 16px Helvetica, sans-serif;
 }
 
 .logoBodyHolder{
@@ -34,9 +35,6 @@ h1{
     padding: 20px;
 }
 
-p{
-    color: tomato;
-}
 
 /* HOME PAGE */
 .addUserButton {
