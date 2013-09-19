@@ -14,7 +14,6 @@ Note: Hibernate will actually auto generate all required tables. We just need to
 * Ensure db is running and on port 3306
 * Set user=admin and password=password
 * Create a schema called "spring-library-service" and leave it blank
-* ~~Import db/database_schema.sql and run it to create the tables~~
 
 ### Code Setup
 
