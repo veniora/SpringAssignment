@@ -19,10 +19,10 @@
     <table>
         <c:forEach items="${bookList}" var="book">
             <tr>
-                <td><img src="http://books.google.com/books?vid=ISBN${book.isbn}&printsec=frontcover&img=1&zoom=1"/></td>
+                <%--<td><img src="http://books.google.com/books?vid=ISBN${book.isbn}&printsec=frontcover&img=1&zoom=1"/></td>--%>
                 <td><a href="/book/${book.id}">${book.title}</a> </td>
-                <td><a href="/book/${book.id}">${book.author}</a> </td>
-                <td><a href="delete/book/${book.id}" onclick="return confirmRemoveBook()"> (remove)</a></td>
+                <%--<td><a href="/book/${book.id}">${book.author}</a> </td>--%>
+                <%--<td><a href="delete/book/${book.id}" onclick="return confirmRemoveBook()"> (remove)</a></td>--%>
             </tr>
         </c:forEach>
     </table>
