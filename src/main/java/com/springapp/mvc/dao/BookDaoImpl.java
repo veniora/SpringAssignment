@@ -31,4 +31,9 @@ public class BookDaoImpl implements BookDao {
             sessionFactory.getCurrentSession().delete(book);
         }
     }
+
+    @Override
+    public Book getBook(long bookId) {
+        return (Book) sessionFactory.getCurrentSession().get(Book.class, bookId);
+    }
 }
