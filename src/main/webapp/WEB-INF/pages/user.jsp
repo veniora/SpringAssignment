@@ -20,8 +20,8 @@
         <c:forEach items="${bookList}" var="book">
             <tr>
                 <td><a href="/book/${book.user_id}">${book.title}</a> </td>
-                <td><a href="/book/${book.user_id}">${book.author}</a> </td>
-                <td><a href="delete/book/${book.user_id}" onclick="return confirmRemoveBook()"> (remove)</a></td>
+                <%--<td><a href="/book/${book.user_id}">${book.author}</a> </td>--%>
+                <%--<td><a href="delete/book/${book.user_id}" onclick="return confirmRemoveBook()"> (remove)</a></td>--%>
             </tr>
         </c:forEach>
     </table>
@@ -34,7 +34,21 @@
             <td><h3><form:label path="title"><spring:message code="label.add_book"/></form:label></h3></td>
         </tr>
         <tr>
+            <td><form:label path="title">Title</form:label></td>
             <td><form:input path="title"/></td>
+        </tr>
+        <tr>
+            <td><form:label path="author">Author</form:label></td>
+            <td><form:input path="author"/></td>
+        </tr>
+        <tr>
+            <td><form:label path="isbn">ISBN</form:label></td>
+            <td><form:input path="isbn"/></td>
+        </tr>
+        <tr>
+            <td style="visibility: hidden"><form:input path="user_id"/></td>
+        </tr>
+        <tr>
             <td><input type="submit" value="" class="addUserButton" alt="Add new book"></td>
         </tr>
     </table>

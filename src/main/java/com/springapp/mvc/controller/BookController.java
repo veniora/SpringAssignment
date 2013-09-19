@@ -32,6 +32,7 @@ public class BookController {
         if (result.hasErrors()){
             return "/user/"+userId;
         } else {
+            book.setUser_id(userId);
             bookService.addBook(book);
 
             return "redirect:/user/"+userId;
