@@ -19,9 +19,10 @@ public class BookDaoImpl implements BookDao {
     }
 
     @Override
-    public List listUserBooks() {
+    public List listUserBooks(int userid) {
         //noinspection JpaQlInspection
-        return this.sessionFactory.getCurrentSession().createQuery("from Book").list();
+
+        return this.sessionFactory.getCurrentSession().createQuery("from Book where userID="+userid).list();
     }
 
     @Override

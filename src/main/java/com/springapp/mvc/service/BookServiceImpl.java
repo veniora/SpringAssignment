@@ -22,8 +22,8 @@ public class BookServiceImpl implements BookService {
 
     @Override
     @Transactional
-    public List listUserBooks() {
-        return bookDao.listUserBooks();
+    public List listUserBooks(int userid) {
+        return bookDao.listUserBooks(userid);
     }
 
     @Override

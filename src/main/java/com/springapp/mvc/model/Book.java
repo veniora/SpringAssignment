@@ -20,8 +20,11 @@ public class Book {
     @Column(name = "isbn")
     private String isbn;
 
+    @Column(name = "userID")
+    private long userID;
+
     @ManyToOne
-    @JoinColumn(name="ID")
+    @JoinColumn(name="ID", referencedColumnName = "ID", insertable = false,updatable=false)
     private User user;
 
     public long getId() {
