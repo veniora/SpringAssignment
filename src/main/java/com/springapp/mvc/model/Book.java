@@ -21,11 +21,11 @@ public class Book {
     private String isbn;
 
     @Column(name = "user_id")
-    private long userID;
+    private long user_id;
 
-//    @ManyToOne
-//    @JoinColumn(name="user_id", insertable = false, updatable = false)
-//    private User user;
+    @ManyToOne
+    @JoinColumn(name="user_id", insertable = false, updatable = false)
+    private User user;
 
     public long getId() {
         return id;
@@ -59,11 +59,11 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public long getUserID() {
-        return userID;
+    public long getUser_id() {
+        return user_id;
     }
 
-    public void setUserID(long userID) {
-        this.userID = userID;
+    public void setUser_id(long userID) {
+        this.user_id = userID;
     }
 }

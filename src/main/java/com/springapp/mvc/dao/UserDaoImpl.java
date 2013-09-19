@@ -1,11 +1,13 @@
 package com.springapp.mvc.dao;
 
+import com.springapp.mvc.model.Book;
 import com.springapp.mvc.model.User;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * Logic to display and add users
@@ -34,4 +36,5 @@ public class UserDaoImpl implements UserDao {
             sessionFactory.getCurrentSession().delete(user);
         }
     }
+
 }
