@@ -21,10 +21,6 @@
         <h1><spring:message code="label.title"/></h1>
 
         <div class="mainBody">
-
-
-
-
             <h1>Title: ${book.title}</h1>
             <h2>Author: ${book.author}</h2>
             <h3>ISBN: ${book.isbn}</h3>
