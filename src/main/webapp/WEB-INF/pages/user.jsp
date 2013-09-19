@@ -42,7 +42,7 @@
 
 
         <form:form method="POST" action="/user/${userId}" modelAttribute="book">
-            <table>
+            <table class="tableBody">
                 <tr>
                     <td><h3><form:label path="title"><spring:message code="label.add_book"/></form:label></h3></td>
                 </tr>
