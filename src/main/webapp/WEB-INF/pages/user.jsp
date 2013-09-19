@@ -28,14 +28,14 @@
 </c:if>
 
 
-<form:form method="POST" action="/" modelAttribute="book">
+<form:form method="POST" action="/user/${userId}" modelAttribute="book">
     <table>
         <tr>
             <td><h3><form:label path="title"><spring:message code="label.add_book"/></form:label></h3></td>
         </tr>
         <tr>
             <td><form:input path="title"/></td>
-            <td><input type="submit" value="" class="addUserButton" alt="Click to add new user"></td>
+            <td><input type="submit" value="" class="addUserButton" alt="Add new book"></td>
         </tr>
     </table>
 </form:form>

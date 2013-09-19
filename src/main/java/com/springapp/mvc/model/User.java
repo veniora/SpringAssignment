@@ -18,7 +18,8 @@ public class User {
     @Column(name = "NAME")
     String name;
 
-    @OneToMany(mappedBy="user")
+    @OneToMany
+    @JoinColumn
     private Set<Book> books;
 
     public User() {
@@ -47,5 +48,9 @@ public class User {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public void setBooks(Set<Book> books) {
+        this.books = books;
     }
 }

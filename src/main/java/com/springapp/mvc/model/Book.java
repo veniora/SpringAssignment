@@ -20,18 +20,18 @@ public class Book {
     @Column(name = "isbn")
     private String isbn;
 
-    @Column(name = "userID")
+    @Column(name = "user_id")
     private long userID;
 
-    @ManyToOne
-    @JoinColumn(name="ID", referencedColumnName = "ID", insertable = false,updatable=false)
-    private User user;
+//    @ManyToOne
+//    @JoinColumn(name="user_id", insertable = false, updatable = false)
+//    private User user;
 
     public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -57,5 +57,13 @@ public class Book {
 
     public void setIsbn(String isbn) {
         this.isbn = isbn;
+    }
+
+    public long getUserID() {
+        return userID;
+    }
+
+    public void setUserID(long userID) {
+        this.userID = userID;
     }
 }
