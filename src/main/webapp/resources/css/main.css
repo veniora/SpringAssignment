@@ -1,10 +1,46 @@
+body{
+    background-image:url('http://i.imgur.com/Maw9FWA.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+}
+
+.logoBodyHolder{
+    width: 800px;
+    height: 100px;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+.mainBody{
+    width: 800px;
+    height: 800px;
+    background-image: url("http://cdni.tutorialchip.com/wp-content/uploads/2012/03/Free-Paper-Texture-Background-520x710.jpg");
+    background-size:100%;
+    border-radius: 8px;
+    margin: 30px;
+}
+
+.tableBody{
+    padding: 30px;
+}
+
+h1{
+    font: bold 40px Arial, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    color: darkslategray;
+    margin-top: 50px;
+    padding: 20px;
+}
+
 p{
     color: tomato;
 }
 
 /* HOME PAGE */
 .addUserButton {
-    background: url("/resources/images/PlusSign.png") no-repeat;
+
     width: 30px;
     height: 30px;
     border: 0;
