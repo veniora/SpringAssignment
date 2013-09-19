@@ -16,8 +16,8 @@
     <table>
         <c:forEach items="${userList}" var="user">
             <tr>
-                <td><a href="/user/${user.id}">${user.name}</a> </td>
-                <td><a href="delete/user/${user.id}" onclick="return confirmRemoveUser()"> (remove)</a></td>
+                <td><a href="/user/${user.user_id}">${user.name}</a> </td>
+                <td><a href="delete/user/${user.user_id}" onclick="return confirmRemoveUser()"> (remove)</a></td>
             </tr>
         </c:forEach>
     </table>

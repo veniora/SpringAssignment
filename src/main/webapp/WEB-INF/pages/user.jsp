@@ -19,9 +19,9 @@
     <table>
         <c:forEach items="${bookList}" var="book">
             <tr>
-                <td><a href="/book/${book.id}">${book.title}</a> </td>
-                <td><a href="/book/${book.id}">${book.author}</a> </td>
-                <td><a href="delete/book/${book.id}" onclick="return confirmRemoveBook()"> (remove)</a></td>
+                <td><a href="/book/${book.user_id}">${book.title}</a> </td>
+                <td><a href="/book/${book.user_id}">${book.author}</a> </td>
+                <td><a href="delete/book/${book.user_id}" onclick="return confirmRemoveBook()"> (remove)</a></td>
             </tr>
         </c:forEach>
     </table>

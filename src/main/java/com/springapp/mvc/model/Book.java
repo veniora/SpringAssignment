@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Book {
 
     @Id
-    @Column(name = "id")
+    @Column(name = "book_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
@@ -20,11 +20,11 @@ public class Book {
     @Column(name = "isbn")
     private String isbn;
 
-    @Column(name = "user_id")
-    private long user_id;
+//    @Column(name = "user_id")
+//    private long user_id;
 
     @ManyToOne
-    @JoinColumn(name="user_ID", insertable = false, updatable = false)
+    @JoinColumn(name="user_id", insertable = false, updatable = false)
     private User user;
 
     public long getId() {
@@ -57,14 +57,6 @@ public class Book {
 
     public void setIsbn(String isbn) {
         this.isbn = isbn;
-    }
-
-    public long getUser_id() {
-        return user_id;
-    }
-
-    public void setUser_id(long userID) {
-        this.user_id = userID;
     }
 
     public User getUser() {
