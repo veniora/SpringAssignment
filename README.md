@@ -21,26 +21,3 @@ Note: Hibernate will actually auto generate all required tables. We just need to
 * Run:                mvn jetty:run
 * Go to:              _http://localhost:8080/_
 
-==========================================
-
-MySQL tips:
-
-1. When creating a new table, the column flags mean:
-
-PK - Primary Key
-
-NN - Not Null 
-
-BIN - Binary
-
-UN - Unsigned
-
-UQ - Create/remove Unique Key
-
-ZF - Zero-Filled
-
-AI - Auto Incremenent
-
-### References
-
-http://viralpatel.net/blogs/spring3-mvc-hibernate-maven-tutorial-eclipse-example/
